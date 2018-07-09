@@ -1,0 +1,4 @@
+[
+  "tests_vector.py::test_vector_equality_1",
+  "tests_vector.py::test_vector_equality_2"
+]
