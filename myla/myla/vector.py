@@ -1,6 +1,7 @@
 """
 Here are some vector functionsself.
 """
+import math
 
 
 def vec_eq(v1, v2):
@@ -38,3 +39,19 @@ def v_plus_v(v1, v2):
         return([x + y for x, y in zip(v1, v2)])
     else:
         raise ValueError("These vectors are of different lengths. Try again!")
+
+
+def inner(v1,v2):
+    """
+    This function computes an inner product of two vectors.
+    """
+    if len(v1) != len(v2):
+        raise ValueError("These vectors are of different lengths. Try again!")
+    return sum([x*y for x, y in zip(v1, v2)])
+
+
+def l2_norm(v):
+    """
+    This function computes an L2 norm of a vector.
+    """
+    return math.sqrt(sum([elem**2 for elem in v]))
